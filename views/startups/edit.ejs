@@ -1,0 +1,41 @@
+<form method="POST" action="/startups/<%= startup.id %>">
+  <input type="hidden" name="_method" value="PUT">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" value="<%= startup.name %>" required>
+  </div>
+  <div>
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description" value="<%= startup.description %>" required>
+  </div>
+  <div>
+    <label for="industry">Industry</label>
+    <input type="text" name="industry" id="industry" value="<%= startup.industry %>">
+  </div>
+  <div>
+    <label for="founders">Founders</label>
+    <input type="text" name="founders" id="founders" value="<%= startup.founders %>" required>
+  </div>
+  <div>
+    <label for="Date">Date</label>
+    <input type="number" name="Date" id="Date" value="<%= startup.date %>" required>
+  </div>
+  <div>
+    <label for="country">Country</label>
+    <input type="text" name="country" id="country" value="<%= startup.country %>" required>
+  </div>
+  <div>
+    <label for="vision">Vision</label>
+    <input type="text" name="vision" id="vision" value="<%= startup.vision %>" required>
+  </div>
+  <div>
+    <label for="mission">Mission</label>
+    <input type="text" name="mission" id="mission" value="<%= startup.mission %>" required>
+  </div>
+  <div>
+    <label for="image">Image</label>
+    <input type="text" name="image" id="image" value="<%= startup.image %>" required>
+  </div>
+
+  <button class="button">Add Startup</button>
+</form>

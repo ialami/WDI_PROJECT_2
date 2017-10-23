@@ -1,0 +1,40 @@
+<header>
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-inverse bg-primary">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="/">techXafrica</a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/startups">Startups</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/startups/new">Add startup</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav">
+          <% if(!locals.isAuthenticated) { %>
+            <li class="nav-item" class="logins">
+            <a class="nav-link" href="/register">Register</a>
+            </li>
+            <li class="nav-item" class="logins">
+            <a class="nav-link" href="/login">Login</a>
+            </li>
+            <% } else { %>
+              <li class="nav-item" class="logins">
+              <a class="nav-link" href="/profile"><%= user.username %></a>
+              </li>
+              <li class="nav-item" class="logins">
+              <a class="nav-link" href="/logout">Logout</a>
+              </li>
+              <% } %>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </header>

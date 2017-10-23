@@ -1,0 +1,43 @@
+<div class="bodybackground">
+<div class="container">
+  <div class="row">
+    <% startups.forEach((startup) => { %>
+      <div class="col-lg-6 col-md-6">
+
+      <div class="container startupblock">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <h2 class="startupname"><%= startup.name %></h2>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <a href="/startups/<%= startup.id %>">
+              <img class="img-fluid img-thumbnail" src="<%= startup.image %>" alt="<%= startup.name %>">
+            </a>
+          </div>
+        </div>
+        <div class="row description">
+          <%= startup.description %><br>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 centre">
+            <%= startup.industry %><br>
+          </div>
+          <div class="col-lg-4 col-md-4 centre">
+            Founded in <%= startup.date %><br>
+          </div>
+          <div class="col-lg-4 col-md-4 centre">
+            <%= startup.country %>
+          </div>
+        </div>
+        <div class="row seemore">
+        <a href="/startups/<%= startup.id %>">
+          See more...
+        </a>
+        </div>
+      </div>
+
+      </div>
+    <% }) %>
+  </div>
+</div>
+</div>
