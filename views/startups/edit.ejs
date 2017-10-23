@@ -1,41 +1,49 @@
-<form method="POST" action="/startups/<%= startup.id %>">
-  <input type="hidden" name="_method" value="PUT">
-  <div>
+<h1 class="titlenew">Update start-up profile</h1>
+<div class="container mainnewstartup">
+  <div class="row">
+    <div class="col-lg-12">
+<form method="POST" action="/startups">
+  <div class="form-group">
+
     <label for="name">Name</label>
-    <input type="text" name="name" id="name" value="<%= startup.name %>" required>
+    <input class="form-control" type="text" name="name" id="name" value="<%= startup.name %>" required>
+
   </div>
-  <div>
+  <div class="form-group">
     <label for="description">Description</label>
-    <input type="text" name="description" id="description" value="<%= startup.description %>" required>
+    <input class="form-control" type="text" name="description" id="description" value="<%= startup.description %>" required>
   </div>
-  <div>
+  <div class="form-group">
     <label for="industry">Industry</label>
-    <input type="text" name="industry" id="industry" value="<%= startup.industry %>">
+    <input class="form-control" type="text" name="industry" id="industry" value="<%= startup.industry %>" required>
   </div>
-  <div>
+  <div class="form-group">
     <label for="founders">Founders</label>
-    <input type="text" name="founders" id="founders" value="<%= startup.founders %>" required>
+    <input class="form-control" type="text" name="founders" id="founders" value="<%= startup.founders %>" required>
   </div>
-  <div>
-    <label for="Date">Date</label>
-    <input type="number" name="Date" id="Date" value="<%= startup.date %>" required>
+  <div class="form-group">
+    <label for="date">Date</label>
+    <input class="form-control" type="number" name="date" id="date" value="<%= startup.date %>" required>
   </div>
-  <div>
+  <div class="form-group">
     <label for="country">Country</label>
-    <input type="text" name="country" id="country" value="<%= startup.country %>" required>
+    <input class="form-control" type="text" name="country" id="country" value="<%= startup.country %>" required>
   </div>
-  <div>
+  <div class="form-group">
     <label for="vision">Vision</label>
-    <input type="text" name="vision" id="vision" value="<%= startup.vision %>" required>
+    <input class="form-control" type="text" name="vision" id="vision" value="<%= startup.vision %>" required>
   </div>
-  <div>
+  <div class="form-group">
     <label for="mission">Mission</label>
-    <input type="text" name="mission" id="mission" value="<%= startup.mission %>" required>
+    <input class="form-control" type="text" name="mission" id="mission" value="<%= startup.mission %>" required>
   </div>
-  <div>
+  <div class="form-group">
     <label for="image">Image</label>
-    <input type="text" name="image" id="image" value="<%= startup.image %>" required>
+    <input class="form-control" type="text" name="image" id="image" value="<%= startup.image %>" required>
   </div>
 
-  <button class="button">Add Startup</button>
+  <button class="btn btn-outline-primary addbutton">Add Startup</button>
 </form>
+</div>
+</div>
+</div>

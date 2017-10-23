@@ -138,6 +138,10 @@ hr {
   padding-left: 50px;
 }
 
+#leavecomments {
+  margin-top: 50px;
+}
+
 .commentcontent {
   border-radius: 5px;
   padding: 5px;
@@ -160,5 +164,47 @@ hr {
 }
 
 #changecontent {
-  margin-bottom: 30px;
+  margin: 30px 0;
+}
+
+//add startup
+
+.titlenew {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.mainnewstartup {
+  margin: 50px auto;
+}
+
+//login page
+
+.logregpage {
+  max-width: 500px;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.titlenew {
+  margin-bottom: 50px;
+  font-size: 120px;
+  font-weight: bold
+}
+
+.backgroundimage {
+  position: relative;
+  background: url('/images/imagetwo.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
 }
