@@ -13,7 +13,7 @@ body {
 
 .mainbox {
   position: relative;
-  background: url('/images/imagethree.jpg') no-repeat center center fixed;
+  background: url('/images/imagefive.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -29,7 +29,7 @@ body {
   transform: translate(-50%, -50%);
   font-size: 100px;
   font-weight: bold;
-  color: white;
+  color: black;
 }
 
 .homepagetext {
@@ -38,10 +38,116 @@ body {
   transform: translate(-50%);
   margin-top: 500px;
   font-size: 50px;
-  color: white;
+  color: black;
   width: 100%;
   text-align: center;
 }
+
+.asideright {
+  position: relative;
+  // border: 10px solid green;
+  background-color: rgba(0, 0, 0, 0.7);
+  float: right;
+  width: 65%;
+  height: 100vh;
+}
+
+.asideleft {
+  position: relative;
+  // border: 10px solid red;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-top: 10px solid white;
+  float: left;
+  width: 35%;
+  height: 100vh;
+}
+
+.catchbox {
+  position: absolute;
+  border-top: 10px solid white;
+  width: 100%;
+  height: 70%;
+}
+
+.partnersbox {
+  position: absolute;
+  // border: 5px solid pink;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+}
+
+.catchupone {
+  position: absolute;
+  height: 15%;
+  margin-top: 10px;
+  color: white;
+  width: 100%;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.catchuptwo {
+  position: absolute;
+  height: 15%;
+  margin-top: 10px;
+  top: 15%;
+  color: white;
+  width: 100%;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.catchupthree {
+  position: absolute;
+  height: 15%;
+  margin-top: 10px;
+  top: 30%;
+  color: white;
+  width: 100%;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.catchsentence {
+  position: absolute;
+  height: 40%;
+  bottom: 0;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  margin: 10px;
+}
+
+//OUR PARTNER
+
+.partnerstitle {
+  color: white;
+  text-align: center;
+}
+
+.partnersbar {
+  width: 50%;
+  height: 3px;
+  border: 0;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: white;
+  color: white;
+}
+
+.logopartners {
+  margin: auto;
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 //STARTUPS PAGE
 
@@ -216,6 +322,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 .blackbox {
