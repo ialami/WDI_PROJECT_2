@@ -39,6 +39,8 @@ body {
   margin-top: 500px;
   font-size: 50px;
   color: white;
+  width: 100%;
+  text-align: center;
 }
 
 //STARTUPS PAGE
@@ -187,22 +189,6 @@ hr {
 
 //login page
 
-.logregpage {
-  max-width: 300px;
-  position: absolute;
-  margin: auto;
-  top: 50%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  font-size: 100px;
-  font-weight: bold;
-  border: 3px solid rgba(240, 173, 78, 1);
-  border-radius: 10px;
-  background-color: white;
-  // opacity: 0.8;
-  padding: 20px;
-}
-
 .titlenew {
   margin-bottom: 20px;
   font-size: 50px;
@@ -230,4 +216,32 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.blackbox {
+  width: 600px;
+  height: 100vh;
+  // border: 2px solid rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  // opacity: 0.2;
+  // z-index: 1; why doesn't it work with z-index and opacity?
+}
+
+.logregpage {
+  max-width: 300px;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-weight: bold;
+  // border: 3px solid rgba(240, 173, 78, 1);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1)!important;
+  // opacity: 0.8;
+  padding: 20px;
+  // opacity: 0.99!important;
+  // z-index: 2!important;
 }

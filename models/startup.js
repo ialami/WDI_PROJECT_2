@@ -55,6 +55,22 @@ const startupSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  incubator: {
+    type: String
+    // required: true
+  },
+  partnering: {
+    type: String,
+    required: true
+  },
+  website: {
+    type: String,
+    required: true
+  },
+  fundingtype: {
+    type: String,
+    required: true
+  },
   createdBy: {
     type: mongoose.Schema.ObjectId,
     ref: 'User',
@@ -63,7 +79,7 @@ const startupSchema = new mongoose.Schema({
   comments: [ commentSchema ]
 });
 
-startupSchema.methods.belongsTo = function hotelBelongsTo(user) {
+startupSchema.methods.belongsTo = function startupBelongsTo(user) {
   if(typeof this.createdBy.id === 'string') return this.createdBy.id === user.id;
   return user.id === this.createdBy.toString();
 };

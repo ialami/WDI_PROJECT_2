@@ -3,6 +3,7 @@
 <% } %>
 
 <div class="backgroundimage">
+    <div class="blackbox">
 <div class="container logregpage">
 
   <div class="row">
@@ -10,12 +11,8 @@
 
 <form method="POST" action="/register">
   <div class="form-group">
-    <label for="firstName"></label>
-    <input class="form-control" type="text" name="firstName" id="firstName" placeholder="First name" required minlength="2">
-  </div>
-  <div class="form-group">
-    <label for="lastName"></label>
-    <input class="form-control" type="text" name="lastName" id="lastName" placeholder="Last name" required minlength="2">
+    <label for="fullName"></label>
+    <input class="form-control" type="text" name="fullName" id="fullName" placeholder="Full name" required minlength="2">
   </div>
   <div class="form-group">
     <label for="username"></label>
@@ -41,5 +38,6 @@
 </div>
 </div>
 
+</div>
 </div>
 </div>
