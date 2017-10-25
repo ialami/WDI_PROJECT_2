@@ -11,6 +11,8 @@ function registrationCreate(req, res, next){
     .create(req.body)
     .then(() => res.redirect('/login'))
     .catch((err) => {
+      console.log(err);
+      console.log(err.name);
       if(err.name === 'ValidationError')
         return res.badRequest('/register', err.toString());
       next(err);

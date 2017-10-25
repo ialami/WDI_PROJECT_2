@@ -43,14 +43,6 @@ const startupSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  vision: {
-    type: String,
-    required: true
-  },
-  mission: {
-    type: String,
-    required: true
-  },
   image: {
     type: String,
     required: true

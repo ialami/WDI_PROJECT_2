@@ -1,0 +1,84 @@
+.homepagerow {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5)!important;
+}
+
+.homepagetext {
+  width: 1000px;
+  height: 500px;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+}
+
+.header {
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.subheader {
+  margin: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.buttonsbox {
+  width: 50%;
+  margin: auto;
+}
+
+.partners {
+  width: 100%;
+  height: 400px;
+}
+
+.partnerstitle {
+  color: rgba(0, 0, 0, 0.5)!important;
+  text-align: center;
+  height: 100px;
+  font-weight: bold;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.partnersbar {
+  width: 50%;
+  height: 5px;
+  border: 0;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 0;
+  background-color: rgba(0, 0, 0, 0.5)!important;
+  color: rgba(0, 0, 0, 0.5)!important;
+}
+
+.logopartners {
+  margin: auto;
+  max-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnerstitle {
+  color: white;
+  text-align: center;
+}

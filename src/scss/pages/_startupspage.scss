@@ -1,0 +1,63 @@
+.startupname {
+  width: inherit;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  // text-align: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.centre {
+  height: 100%;
+  width: inherit;
+  margin: auto;
+  text-align: center;
+}
+
+.description {
+  margin: 20px 0;
+  text-align: justify;
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+.seemore {
+  margin: auto 0;
+  margin-bottom: 0;
+  float: right;
+  color: white;
+}
+
+.startupblock {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+  // border: 3px solid rgba(240, 173, 78, 1);
+  // border: 1px solid black;
+  border-radius: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(238, 240, 243, 1);
+  background-color: white;
+  height: 250px;
+}
+
+.bodybackground {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1)!important;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.startuplogo {
+  max-height: 80px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overview {
+  margin-top: 30px;
+}

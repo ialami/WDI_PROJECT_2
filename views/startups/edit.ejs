@@ -2,7 +2,8 @@
 <div class="container mainnewstartup">
   <div class="row">
     <div class="col-lg-12">
-<form method="POST" action="/startups">
+<form method="POST" action="/startups/<%= startup.id %>">
+  <input type="hidden" name="_method" value="PUT">
   <div class="form-group">
 
     <label for="name">Name</label>
