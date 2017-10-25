@@ -81,5 +81,13 @@ h3 {
 }
 
 .btn-outline-secondary {
-  color: rgba(0, 0, 0, 0.7),
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: rgba(0, 0, 0, 0.7);
 }

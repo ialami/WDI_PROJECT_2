@@ -4,29 +4,29 @@
     <% startups.forEach((startup) => { %>
       <div class="col-lg-4 col-md-4">
 
-      <div class="container startupblock">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <a href="/startups/<%= startup.id %>">
-              <img class="img-fluid img-thumbnail startuplogo" src="<%= startup.image %>" alt="<%= startup.name %>">
-            </a>
+        <div class="container startupblock">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <a href="/startups/<%= startup.id %>">
+                <img class="img-fluid img-thumbnail startuplogo" src="<%= startup.image %>" alt="<%= startup.name %>">
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="row overview">
-          <div class="col-lg-4 col-md-4 centre">
-            <%= startup.industry %><br>
-          </div>
-          <div class="col-lg-4 col-md-4 centre">
-            Founded in <%= startup.date %><br>
-          </div>
-          <div class="col-lg-4 col-md-4 centre">
+          <div class="row overview">
+            <div class="col-lg-4 col-md-6 col-sm-12 centre">
+              <%= startup.industry %><br>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 centre">
+              Founded in <%= startup.date %><br>
+            </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 centre d-inline-block col-2 text-truncate"  style="max-width: 300px;">
             <%= startup.country %>
           </div>
         </div>
-        <div class="row seemore">
-        <a href="/startups/<%= startup.id %>">
-          See more...
-        </a>
+          <div class="row seemore">
+          <a href="/startups/<%= startup.id %>">
+            See more...
+          </a>
         </div>
       </div>
 

@@ -20,7 +20,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5)!important;
-  border-top: 5px solid white;
+  // border-top: 5px solid white;
 }
 
 .homepagetext {
@@ -51,7 +51,9 @@ body {
 }
 
 .buttonsbox {
-  margin-top: 10px;
+  // margin-top: 30px;
+  width: 50%;
+  margin: auto;
 }
 
 .joinus {
@@ -62,6 +64,16 @@ body {
   margin:10px auto;
   display: block;
   font-weight: bold;
+}
+
+.explore {
+  width: 500px;
+  border-radius: 5px;
+  // height: 100%;
+  font-size: 40px;
+  margin:10px auto;
+  display: block;
+  font-weight: bolder;
 }
 
 .buttonsboxlogin {
@@ -113,8 +125,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  // display: table-cell;
-  // vertical-align: middle;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -237,6 +253,7 @@ homepagecont {
 
 .seemore {
   margin: auto 0;
+  margin-bottom: 0;
   float: right;
   color: white;
 }
@@ -251,14 +268,15 @@ homepagecont {
   color: rgba(0, 0, 0, 0.7);
   background-color: rgba(238, 240, 243, 1);
   background-color: white;
+  height: 250px;
 }
 
 .bodybackground {
-  position: relative;
-  // background: url('/images/imagetwo.jpg') repeat center center fixed;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.1)!important;
   background-size: cover;
-  // height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 .startuplogo {

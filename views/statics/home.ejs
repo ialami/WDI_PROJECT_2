@@ -1,16 +1,29 @@
-<div class="container-fluid homepagecont">
+<div class="container-fluid homepagecont backgroundimage">
   <div class="row" id="homepagetext">
     <div class="col-lg-12 homepagerow">
       <div class="homepagetext">
         <h1 class="header">New partners, new opportunities...</h1>
         <h2 class="subheader">Develop your business and partner with start-ups all over the world</h2>
-        <div class="buttonsbox">
-          <button class="btn btn-outline-secondary nav-link joinus" href="/register">Join</button>
-          <%# <button type="button" class="btn btn-dark">Login</button>%>
-        </div>
-        <div class="buttonsboxlogin">
-          <button class="btn btn-outline-secondary nav-link login" href="/login">Login</button>
-        </div>
+        <% if(locals.isAuthenticated) { %>
+          <div class="container buttonsbox">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                  <button class="btn btn-outline-secondary explore"><a class="nav-link" href="/startups">Explore start-ups !</a></button>
+              </div>
+            </div>
+          </div>
+        <% } else { %>
+          <div class="container buttonsbox">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                  <button class="btn btn-outline-secondary joinus"><a class="nav-link" href="/register">Join</a></button>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                  <button class="btn btn-outline-secondary login"><a class="nav-link" href="/login">Login</a></button>
+              </div>
+            </div>
+          </div>
+        <% } %>
       </div>
     </div>
   </div>
@@ -20,13 +33,13 @@
       <hr class="partnersbar">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="col-lg-4 col-md-4 col-sm-6 flexbox">
             <a href="http://www.hec.fr/Grande-Ecole-MS-MSc/Communication/Landing-Pages/HEC-Paris-rejoint-Station-F"><img class="img-fluid img-thumbnail logopartners" src="../images/hec.png"></a>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="col-lg-4 col-md-4 col-sm-6 flexbox">
             <a href="https://www.city.ac.uk/research/research-and-enterprise/getting-started/city-schemes/london-city-incubator"><img class="img-fluid img-thumbnail logopartners" src="../images/city.png"></a>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="col-lg-4 col-md-4 col-sm-6 flexbox">
             <a href="http://www.imperial.ac.uk/thinkspace/partners-and-services/imperial-white-city-incubator/"><img class="img-fluid img-thumbnail logopartners" src="../images/imp.jpg"></a>
           </div>
         </div>
